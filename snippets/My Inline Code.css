@@ -1,0 +1,86 @@
+.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code),
+.markdown-preview-view code {
+  background: var(--code-light) !important;
+  color: var(--code-text-light) !important;
+  padding: 0.15em 0.5em;
+  border-radius: 6px;
+  font-weight: 600;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.08),
+    inset 0 1px 2px rgba(255, 255, 255, 0.9),
+    inset 0 -1px 1px rgba(144, 194, 249, 0.4);
+  border: 1px solid var(--code-border-light);
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: scale(1);
+  position: relative;
+  z-index: 0;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+  line-height: 1.3 !important;
+  margin: 0 !important;
+  display: inline;
+}
+
+.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):hover,
+.markdown-preview-view code:hover {
+  background: var(--code-light-hover) !important;
+  transform: scale(1.03) translateY(-0.5px);
+  box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.12),
+    inset 0 1px 2px rgba(255, 255, 255, 0.95),
+    inset 0 -1px 2px rgba(144, 194, 249, 0.5);
+  z-index: 2;
+}
+
+.theme-dark .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code),
+.theme-dark .markdown-preview-view code {
+  background: var(--code-dark) !important;
+  color: var(--code-text-dark) !important;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.25),
+    inset 0 1px 1px rgba(255, 255, 255, 0.08),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--code-border-dark);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.theme-dark .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):hover,
+.theme-dark .markdown-preview-view code:hover {
+  background: var(--code-dark-hover) !important;
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.35),
+    inset 0 1px 2px rgba(255, 255, 255, 0.12),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.5);
+  color: #82c0ff;
+}
+
+.markdown-preview-view code:not(pre > code) {
+  white-space: nowrap;
+  overflow-x: auto;
+  display: inline-block;
+  padding: 0.15em 0.4em;
+  background-color: var(--background-secondary);
+  border-radius: 3px;
+  font-size: 0.9em;
+  vertical-align: middle;
+  max-width: 100%;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  line-height: 1.4;
+}
+
+.cm-content .cm-line .cm-inline-code {
+  white-space: nowrap !important;
+  display: inline-block !important;
+  padding: 0.15em 0.4em !important;
+  font-size: 0.9em !important;
+  vertical-align: middle !important;
+  line-height: 1.4 !important;
+  margin: 0 !important;
+  background-color: var(--background-secondary) !important;
+  border-radius: 3px !important;
+  overflow-x: auto !important;
+  max-width: 100% !important;
+  -webkit-overflow-scrolling: touch !important;
+  box-sizing: border-box !important;
+}
